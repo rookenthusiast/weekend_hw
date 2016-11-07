@@ -143,7 +143,7 @@ class TestPetShop < Minitest::Test
   end
 
   def test_customer_pet_count
-    count = customer_pet_count(@customer[0])
+    count = customer_pet_count(@customers[0])
     assert_equal(0, count)
   end
 

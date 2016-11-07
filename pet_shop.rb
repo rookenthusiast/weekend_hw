@@ -42,6 +42,7 @@ def stock_count(array)
    return new_array
  end
 
+
  def all_pets_by_breed__not_found(pet_shop, breed)
 new_array = []
 for pet in pet_shop[:pets]
@@ -53,12 +54,12 @@ end
 end 
 
 def find_pet_by_name(pet_shop, name_of_pet)
-for pet in pet_shop[:pets]
-  if pet[:name] == name_of_pet
-    return pet
+  for pet in pet_shop[:pets]
+    if pet[:name] == name_of_pet
+      return pet
+    end
   end
- end
- return nil
+  return nil
 end
 
 
@@ -77,8 +78,8 @@ def add_pet_to_stock(pet_shop, new_pet)
 end
 
 def customer_pet_count(customers)
-  return new_customer[first_customer][:pets].count
-  end
+  return customers[:pets].length
+end
 
 # def add_pet_to_customer(customers, pet)
 # for person in customers
